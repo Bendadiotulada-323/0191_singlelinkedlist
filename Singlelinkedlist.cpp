@@ -55,4 +55,9 @@ void addnode()
         previous->next = nodebaru;
     }
 
- 
+    bool listempty()
+    {
+        return (START == NULL);
+    }
+
+   
