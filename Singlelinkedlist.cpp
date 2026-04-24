@@ -89,4 +89,25 @@ void addnode()
         return true;
     }
 
+    void traverse()
+    {
+        if (listempty())
+        {
+            cout << "\nList Kosong\n";
+        }
+        else
+        {
+            cout <<"\nData didalam list adalah:\n";
+            node *currentnode = START;
+            while (currentnode != NULL)
+            {
+                cout << currentnode->noMhs << endl;
+                currentnode = currentnode->next;
+            }
+            cout << endl;    
+        }
+    }
+};
+  
+
    
